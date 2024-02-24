@@ -25,7 +25,7 @@ public abstract class LivingEntityMixin extends Entity
 	{
 		LivingEntity living = (LivingEntity) (Object) this;
 
-		if (!living.level().isClientSide())
+		if (!living.level().isClientSide() && living.tickCount % 20 == 0)
 		{
 			OxygenChargerUtils.distributeToItems(living);
 		}

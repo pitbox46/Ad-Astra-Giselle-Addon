@@ -27,7 +27,7 @@ public class OxygenChargerUtils
 {
 	public static void distributeToItems(LivingEntity living)
 	{
-		streamExtractable(living, FluidConstants.fromMillibuckets(1L)).forEach(c ->
+		streamExtractable(living, FluidConstants.fromMillibuckets(20L)).forEach(c ->
 		{
 			distributeToItems(living, c);
 		});
